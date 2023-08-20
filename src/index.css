@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Oxygen:wght@300&family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./circle-scatter-haikei.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-box {
+  background-color: #fff;
+  width: 30vw;
+  padding: 1.3rem;
+  height: 100%;
+}
+h1 {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.acc-box {
+  width: 100%;
+  background-color: #fddb27ff;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  padding: 0 1rem;
+  display: flex;
+  transition: 0.3s;
+}
+.fa-icon {
+  line-height: 3rem;
+  font-size: 1.3rem !important;
+  cursor: pointer;
+}
+h2 {
+  font-size: 1.4rem;
+  line-height: 3rem;
+  margin-left: 0.6rem;
+  font-family: "Arimo", sans-serif;
+}
+.acc-box-two {
+  background-color: #07b6d5;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 0.7rem 1rem;
+  color: #fff;
+}
+small {
+  font-family: "Oxygen", sans-serif;
+}
+
+/* //media query  */
+
+@media (max-width: 700px) {
+  body {
+    background-color: #001220;    
+    background-image: url("");
+
+    
+  }
+  .in-active{
+    display: none;
+  }
+
+  .main-box {
+    width: 100vw !important;
+    background-color: #001220;   
+
+  }
+
+  .acc-box-two {
+    background-color: #fff;  
+    color: #001220;
+  }
+
+  h1 {
+    color: #fff !important;
+  }
+  h2 {
+    font-size: 1rem;
+    line-height: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media (max-width: 786px) {
+  .main-box {
+    width: 90vw;
+  }
+}
+@media (min-width: 787px) and (max-width: 1000px) {
+  .main-box {
+    width: 60vw;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1384px) {
+  .main-box {
+    width: 50vw;
+  }
+}
